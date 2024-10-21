@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Slider</title>
+    <style>
+        #video-container {
+            width: 640px;
+            height: 360px;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        /* Styling the bullet container */
+        
+        #bullet-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        /* Styling each bullet (dot) */
+        
+        .bullet {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: lightgray;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        /* Active bullet styling */
+        
+        .active {
+            background-color: #392bd7;
+        }
+        
+        .bullet:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="video-container"></div>
+
+    <!-- Bullet container for navigation -->
+    <div id="bullet-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
